@@ -1,0 +1,25 @@
+{
+  "auth": "zef:tbrowder",
+  "authors": [
+    "Tom Browder"
+  ],
+  "build-depends": [
+  ],
+  "depends": [
+  ],
+  "description": "Provides methods and routines to create astronomical data for a geographic position",
+  "license": "Artistic-2.0",
+  "name": "Astro::Factory",
+  "perl": "6.d",
+  "provides": {
+    "Astro::Factory": "lib/Astro/Factory.rakumod"
+  },
+  "resources": [
+  ],
+  "source-url": "",
+  "tags": [
+  ],
+  "test-depends": [
+  ],
+  "version": "0.0.1"
+}
