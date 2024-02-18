@@ -1,0 +1,13 @@
+Use a Build.rakumod to:
+
+  cd to a tempdir
+  git clone https://github.com/skrushinsky/Astro-Montenbruck.git
+  git checkout master
+  git reset hard 4a3ac80
+
+  copy all libs to /lib5 (lib5 is .git ignored)
+  cooy all desired script files to /bin5 (also .git ignored)
+
+  define env PERL5LIB=/path/to/lib5
+  NOTE: temp save all just in case we need mod
+        Sergey's files

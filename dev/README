@@ -1,0 +1,16 @@
+This module and subdirs contains info about the Perl module
+Astro::Montenbruck and its contents.
+
+Known useful scripts in the downloaded Perl package Astro::Montenbruck,
+version 1.26, released 2022-02-05, subdirectory '/script':
+
++ planpos.pl
++ rst_almanac.pl
++ solequ.pl
++ phases.pl
++ riseset.pl
+
+I copied files from the downloaded CPAN archive for version 1.26
+to this repo's local /bin5 and /lib5 directory.
+
+
