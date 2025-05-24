@@ -1,0 +1,47 @@
+NAME
+    phases — calculate date/time of solstices and equinoxes for a given
+    year.
+
+SYNOPSIS
+      solequ [options]
+
+OPTIONS
+    --help
+        Prints a brief help message and exits.
+
+    --year
+        Year, astronomical (zero-year allowed)
+
+          --year=2021
+
+    --timezone
+        Time zone name, e.g.: "EST", "UTC", "Europe/Berlin" etc. or *offset
+        from Greenwich* in format +HHMM / -HHMM, like +0300.
+
+            --timezone=CET # Central European Time
+            --timezone=EST # Eastern Standard Time
+            --timezone=UTC # Universal Coordinated Time
+            --timezone=GMT # Greenwich Mean Time, same as the UTC
+            --timezone=+0300 # UTC + 3h (eastward from Greenwich)
+            --timezone="Europe/Moscow"
+
+        By default, local timezone by default.
+
+        Please, note: Windows platform does not recognize some time zone
+        names, "MSK" for instance. In such cases use *offset from Greenwich*
+        format, as described above.
+
+    --theme: color theme
+
+        *   dark (default): for dark consoles
+
+        *   light: for light consoles
+
+        *   * colorless: without colors, for terminals that do not support
+            ANSI color codes
+
+    --no-colors: do not use colors, same as "--theme=colorless"
+
+DESCRIPTION
+    solequ computes solstices and equinoxes for a given year.
+

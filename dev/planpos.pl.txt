@@ -1,0 +1,79 @@
+NAME
+    planpos - calculate planetary positions for given time and place.
+
+SYNOPSIS
+      planpos [options]
+
+OPTIONS
+    --help
+        Prints a brief help message and exits.
+
+    --man
+        Prints the manual page and exits.
+
+    --time
+        Date and time, either a *calendar entry* in format "YYYY-MM-DD HH:MM
+        Z", or "YYYY-MM-DD HH:MM Z", or a floating-point *Julian Day*:
+
+          --time="2019-06-08 12:00 +0300"
+          --time="2019-06-08 09:00 UTC"
+          --time=2458642.875
+
+        Calendar entries should be enclosed in quotation marks. Optional "Z"
+        stands for time zone, short name or offset from UTC. "+00300" in the
+        example above means *"3 hours east of Greenwich"*.
+
+    --place
+        The observer's location. Contains 2 elements, space separated.
+
+        *   latitude in "DD(N|S)MM" format, N for North, S for South.
+
+        *   longitude in "DDD(W|E)MM" format, W for West, E for East.
+
+        E.g.: "--place=51N28 0W0" for *Greenwich, UK* (the default).
+
+        Decimal numbers are also supported. In that case
+
+        *   The latitude always goes first
+
+        *   Negative numbers represent *South* latitude and *East*
+            longitudes.
+
+        "--place=55.75 -37.58" for *Moscow, Russian Federation*.
+        "--place=40.73 73.935" for *New-York, NY, USA*.
+
+    --coordinates: type and format of coordinates to display:
+
+        *   1 - Ecliptical, angular units (default)
+
+        *   2 - Ecliptical, zodiac
+
+        *   3 - Equatorial, time units
+
+        *   4 - Equatorial, angular units
+
+        *   5 - Horizontal, time units
+
+        *   6 - Horizontal, angular units
+
+    --format: format of numbers:
+
+        *   D decimal: arc-degrees or hours
+
+        *   S sexagesimal: degrees (hours), minutes, seconds
+
+    --theme: color theme:
+
+        *   dark (default): for dark consoles
+
+        *   light: for light consoles
+
+        *   colorless: without colors, for terminals that do not support
+            ANSI color codes
+
+    --no-colors: do not use colors, same as "--theme=colorless"
+
+DESCRIPTION
+    planpos computes planetary positions for current moment or given time
+    and place.
+
